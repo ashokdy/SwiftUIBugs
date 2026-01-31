@@ -11,6 +11,7 @@ import SwiftUI
 actor BankAccount {
     private var balance: Int = 100
 
+    
     func withdraw(amount: Int) async -> Bool {
         if balance >= amount {
             balance -= amount
